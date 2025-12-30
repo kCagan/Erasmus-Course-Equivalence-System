@@ -50,12 +50,22 @@ The system uses SQL Triggers (found in `/Triggers`) to enforce academic rules:
     * Output Screenshots & Analysis
     * Design Rationale
 
-## 🛠 How to Run
-1.  **Setup:** Run the table creation scripts (derived from the Relational Model in the report).
-2.  **Constraints:** Execute scripts in `/Constraints` to apply business rules.
-3.  **Triggers:** Execute scripts in `/Triggers` to enable automation.
-4.  **Populate:** Insert dummy data (provided in the report's "Insert" section).
-5.  **Analyze:** Use the reporting scripts in `/Queries` to generate equivalence tables.
+## ⚙️ Installation & Setup
+To replicate this database system on your local machine:
 
+1.  **Database Creation:**
+    * Open **MS SQL Server Management Studio (SSMS)**.
+    * Create a new database named `ErasmusProjectDB`.
+    * Execute the `CREATE TABLE` scripts provided in the **Project Report (Physical Model section)** or the SQL files.
+
+2.  **Apply Constraints & Triggers:**
+    * Run the scripts located in the `/Constraints` folder to enforce data rules.
+    * Run the scripts in the `/Triggers` folder to enable automation (e.g., workload calculation).
+
+3.  **Import Data:**
+    * Use the `INSERT` statements (found in the report/scripts) to populate the tables with dummy university data (Ege, TOBB, BAU).
+
+4.  **Run Reports:**
+    * Execute the scripts in the `/Queries` folder to generate the **Course Equivalence Report**.
 ---
 **Author:** Kutlu Çağan Akın 
