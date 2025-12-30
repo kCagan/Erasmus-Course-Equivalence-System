@@ -42,4 +42,4 @@ Implemented in the `/Queries` folder, the system filters courses through a hiera
 4.  Use the reporting scripts in `/Queries` to generate equivalence reports.
 
 ---
-**Author:** [Senin Adın]
+**Author:** Kutlu Çağan Akın
